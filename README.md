@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Air Orchestra 🎶
 
-## Getting Started
+Air Orchestra is a high-fidelity, gestural musical instrument that allows you to play a full 3D drum kit, a classical tabla, or strum a virtual guitar completely in the air using ESP32-powered wearable rings.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Full 3D Stage**: An immersive, full-screen 3D performance stage built with `react-three-fiber`.
+- **Multiple Instruments**: 
+  - **Drums**: Play a 4-piece kit (Kick, Snare, Hi-hat, Crash). The physics engine intelligently maps your arm motions (downward drop, wrist snap, forward jab) to the correct drum.
+  - **Tabla**: A custom 3D classical Indian Tabla set. Your left hand controls the bass (Bayan) and right hand controls the treble (Dayan).
+  - **Guitar**: A fully modeled 3D acoustic guitar. Cycle chords with your left hand and strum with your right.
+- **Ultra-Low Latency Audio**: Synthesized entirely in the browser using `Tone.js`. No audio samples to download; everything is generated in real-time.
+- **Live Hardware Tracking**: Real-time HUD displaying packet rates and sub-20ms latency metrics for the ESP32 rings.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hardware Setup (The Rings)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The system requires two wearable rings, each equipped with an **ESP32** microcontroller and an **MPU6050** IMU (accelerometer + gyroscope).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Upload the firmware located in the `arduino_files` directory to your ESP32 boards.
+   - `air_orchestra.ino` is for **Ring 1** (Right Hand). This acts as the WiFi Access Point and WebSocket server.
+   - `ring2_air_orchestra.ino` is for **Ring 2** (Left Hand). This acts as a client that connects to Ring 1's hotspot.
+2. The sensors sample motion data at 100Hz and stream it to the browser via WebSockets.
 
-## Learn More
+## Software Setup (The Interface)
 
-To learn more about Next.js, take a look at the following resources:
+The dashboard is built with Next.js, TailwindCSS, and Three.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:3000` in your browser.
+4. Click "Start Audio" and connect your rings to begin playing!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+- **Frontend**: Next.js 14, React, TailwindCSS, Framer Motion
+- **3D Engine**: Three.js, React Three Fiber, React Three Drei
+- **Audio Engine**: Tone.js (Web Audio API)
+- **Hardware**: C++ (Arduino Core), WebSockets, ESP32, MPU6050
