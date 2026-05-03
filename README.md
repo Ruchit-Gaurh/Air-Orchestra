@@ -23,6 +23,10 @@
 [![Arduino](https://img.shields.io/badge/Arduino-ESP32-00979D?style=flat-square&logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
+<br/>
+
+<img src="https://github.com/user-attachments/assets/1e1df27d-5aa8-4c68-acb4-846a130e3f3a" alt="Air Orchestra Hardware" width="380"/>
+
 </div>
 
 ---
@@ -35,21 +39,10 @@ Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you 
 
 ---
 
-## 🖼️ Screenshots
+## 🔧 Hardware
 
 <div align="center">
-<table>
-  <tr>
-    <td align="center"><b>🥁 Drum Kit Mode</b></td>
-    <td align="center"><b>🪘 Tabla Mode</b></td>
-    <td align="center"><b>🎸 Guitar Mode</b></td>
-  </tr>
-  <tr>
-    <td><img src="public/screenshots/drums.png" alt="Drum Kit Mode" width="280"/></td>
-    <td><img src="public/screenshots/tabla.png" alt="Tabla Mode" width="280"/></td>
-    <td><img src="public/screenshots/guitar.png" alt="Guitar Mode" width="280"/></td>
-  </tr>
-</table>
+<img src="https://github.com/user-attachments/assets/1e1df27d-5aa8-4c68-acb4-846a130e3f3a" alt="Air Orchestra Hardware - ESP32 wearable ring" width="420"/>
 </div>
 
 ---
