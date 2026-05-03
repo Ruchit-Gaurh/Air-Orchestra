@@ -2,7 +2,7 @@
 
 # 🎶 Air Orchestra
 
-### *Play music in the air — no instrument required.*
+### *Play music in the air - no instrument required.*
 
 **An immersive gestural music platform powered by ESP32 wearable rings and a real-time 3D browser stage.**
 
@@ -29,9 +29,9 @@
 
 ## 🌟 What is Air Orchestra?
 
-Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you play a full 3D drum kit, a classical Indian Tabla, or strum a virtual guitar — **completely in the air**, using two ESP32-powered wearable smart rings. Motion data from the rings is streamed at **100 Hz** to an immersive browser-based 3D stage where your gestures are mapped to real-time synthesised sound with **sub-20ms latency**.
+Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you play a full 3D drum kit, a classical Indian Tabla, or strum a virtual guitar - **completely in the air**, using two ESP32-powered wearable smart rings. Motion data from the rings is streamed at **100 Hz** to an immersive browser-based 3D stage where your gestures are mapped to real-time synthesised sound with **sub-20ms latency**.
 
-> 🏆 **Built in 24 hours** at the **Dev Summit 2026 Hackathon** — *4th place finish!*
+> 🏆 **Built in 24 hours** at the **Dev Summit 2026 Hackathon** - *4th place finish!*
 
 ---
 
@@ -59,10 +59,10 @@ Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you 
 | Feature | Description |
 |---|---|
 | 🎭 **Full 3D Stage** | Immersive full-screen 3D performance stage built with React Three Fiber |
-| 🥁 **Drum Kit** | 4-piece kit (Kick, Snare, Hi-Hat, Crash) — mapped to natural arm motions |
+| 🥁 **Drum Kit** | 4-piece kit (Kick, Snare, Hi-Hat, Crash) - mapped to natural arm motions |
 | 🪘 **Tabla** | Classical Indian Tabla set; left hand = Bayan (bass), right = Dayan (treble) |
 | 🎸 **Guitar** | Fully modelled 3D acoustic guitar; cycle chords with one hand, strum with the other |
-| ⚡ **Ultra-Low Latency** | All audio synthesised in the browser via Tone.js — no sample downloads |
+| ⚡ **Ultra-Low Latency** | All audio synthesised in the browser via Tone.js - no sample downloads |
 | 📡 **Live HUD** | Real-time packet rate & latency metrics per ring displayed on-screen |
 | 🔄 **Auto-Demo** | Idle animation plays automatically when no rings are connected |
 
@@ -87,8 +87,8 @@ Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you 
 ### Tabla
 | Hand | Ring | Voice |
 |---|---|---|
-| Left | Ring 1 | Bayan — deep bass resonance |
-| Right | Ring 2 | Dayan — sharp treble strike |
+| Left | Ring 1 | Bayan - deep bass resonance |
+| Right | Ring 2 | Dayan - sharp treble strike |
 
 ---
 
@@ -227,7 +227,7 @@ Air-Orchestra/
 
 Air Orchestra was built in **24 hours** for the **Dev Summit 2026 Hackathon** and earned **4th place** overall.
 
-The core challenge: design and build a complete hardware-software system — from soldering ESP32 rings to a full real-time 3D audio engine in the browser — in a single day.
+The core challenge: design and build a complete hardware-software system - from soldering ESP32 rings to a full real-time 3D audio engine in the browser - in a single day.
 
 ---
 
@@ -245,7 +245,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
