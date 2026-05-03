@@ -39,14 +39,6 @@ Air Orchestra is a high-fidelity, **gestural musical instrument** that lets you 
 
 ---
 
-## 🔧 Hardware
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/1e1df27d-5aa8-4c68-acb4-846a130e3f3a" alt="Air Orchestra Hardware - ESP32 wearable ring" width="420"/>
-</div>
-
----
-
 ## ✨ Features
 
 | Feature | Description |
